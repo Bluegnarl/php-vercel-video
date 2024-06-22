@@ -20,7 +20,7 @@
         {
             "src": "/datas/data.json",
             "dest": "/public/datas/data.json"
-        }
+        },
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
