@@ -1,6 +1,7 @@
 <?php
 
 $title = "PHP Vercel";
+$data = json_decode(file_get_contents(__DIR__ . "/datas/data.json"), true);
 
 ?>
 <!DOCTYPE html>
@@ -13,5 +14,8 @@ $title = "PHP Vercel";
 </head>
 <body>
     <img src="/assets/first.png" alt="">
+    <?php foreach($data as $text) : ?>
+        <p><?= $text['value'] ?></p>
+    <?php endforeach ?>
 </body>
 </html>
