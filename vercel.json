@@ -10,14 +10,6 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/style.css",
-            "dest": "/public/style.css"
-        },
-        {
-            "src": "/assets/img/(.*).png",
-            "dest": "/public/assets/img/$1"
-        },
-        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
