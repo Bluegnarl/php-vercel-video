@@ -1,8 +1,6 @@
 <?php
 
-$text = "Je suis un texte";
-
-$data = json_decode(file_get_contents(__DIR__ . "/assets/datas/data.json"), true);
+$text = "Home Page";
 
 ?>
 <!DOCTYPE html>
@@ -11,11 +9,11 @@ $data = json_decode(file_get_contents(__DIR__ . "/assets/datas/data.json"), true
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Help Page</title>
+    <title>PHP Vercel Video</title>
 </head>
 <body>
-    <a href="/"><?= $text ?></a>
-    <img src="/assets/img/first.png">
+    <a href="/?page=help"><?= $text ?></a>
+    <img src="/assets/img/second.png">
     <?php foreach ($data as $paragraph) : ?>
         <div>
             <h2><?= $paragraph['title'] ?></h2>
