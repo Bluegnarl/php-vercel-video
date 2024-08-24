@@ -10,10 +10,6 @@
         "dest": "/api/index.php"
       },
       {
-        "src": "/help.php",
-        "dest": "/public/help.php"
-      },
-      {
         "src": "/style.css",
         "dest": "/public/style.css"
       },
